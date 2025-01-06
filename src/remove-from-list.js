@@ -22,6 +22,8 @@ const { ListNode } = require('../extensions/list-node.js');
  *   }
  * }
  */
+
+
 function removeKFromList(l, k ) {
   let dummy = new ListNode(0);
   dummy.next = l;

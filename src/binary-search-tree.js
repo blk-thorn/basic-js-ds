@@ -6,6 +6,8 @@ const { NotImplementedError } = require('../extensions/index.js');
 * Implement simple binary search tree according to task description
 * using Node from extensions
 */
+
+
 class Node {
   constructor(data) {
     this.data = data;
@@ -100,7 +102,6 @@ class BinarySearchTree {
       if (!node.right) {
         return node.left;
       }
-
 
       const minNode = this._findMinNode(node.right);
       node.data = minNode.data;
